@@ -1,0 +1,11 @@
+{
+  "totalReviews": "3194",
+  "averageRating": "4.9",
+  "ratings": [
+    { "stars": "5", "reviews": "2906" },
+    { "stars": "4", "reviews": "227" },
+    { "stars": "3", "reviews": "50" },
+    { "stars": "2", "reviews": "4" },
+    { "stars": "1", "reviews": "7" }
+  ]
+}

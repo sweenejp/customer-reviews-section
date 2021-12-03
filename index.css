@@ -1,0 +1,118 @@
+:root {
+  --primary-color1: #ffab41;
+  --primary-color2: #0092d6;
+  --neutral-color1: #bccbdb;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.material-icons-star {
+  color: var(--primary-color1);
+}
+
+.material-icons-button {
+  color: var(--primary-color2);
+}
+
+.reviews {
+  font-family: 'Readex Pro', sans-serif;
+  max-width: 800px;
+  margin: auto;
+}
+
+.reviews-header {
+  text-align: center;
+  font-weight: 700;
+  margin: 1em;
+}
+
+.reviews-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 1em 1em 1em;
+}
+
+.summary-average-number {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.reviews-graph {
+  margin: auto;
+  width: fit-content;
+}
+
+.graph-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.5em;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+/* fade unhovered graph-items */
+.reviews-graph:hover > .graph-item {
+  opacity: 0.6;
+}
+.graph-item:hover {
+  opacity: 1 !important;
+}
+
+.graph-bar-outer {
+  width: 100px;
+  height: 15px;
+  background-color: var(--neutral-color1);
+  position: relative;
+}
+
+.graph-bar-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  background-color: var(--primary-color2);
+}
+
+.review-button {
+  border: solid 2px var(--primary-color2);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin: 1em;
+  -webkit-box-shadow: 5px 5px 16px -6px #000000;
+  box-shadow: 5px 5px 16px -6px #000000;
+  background-color: var(--neutral-color1);
+  transition: box-shadow 100ms ease-in-out;
+  -webkit-transition: box-shadow 100ms ease-in-out;
+  -moz-transition: box-shadow 100ms ease-in-out;
+  -ms-transition: box-shadow 100ms ease-in-out;
+  -o-transition: box-shadow 100ms ease-in-out;
+  cursor: pointer;
+}
+
+.review-button:hover {
+  box-shadow: none;
+  background-color: var(--neutral-color1);
+}
+
+@media screen and (min-width: 740px) {
+  .reviews-flex-container {
+    display: flex;
+  }
+
+  .reviews-summary {
+    align-items: start;
+  }
+}
